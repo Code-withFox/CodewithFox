@@ -8,46 +8,48 @@
 </head>
 <body>
 
-  <!-- BACKGROUND -->
   <div class="bg"></div>
 
-  <!-- NAV -->
-  <header>
+  <!-- NAVBAR -->
+  <header class="site-header">
     <div class="nav">
-      <div class="logo">CODE WITH FOX</div>
+      <a href="#" class="logo">CODE WITH FOX</a>
+
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#journey">Journey</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
+        <span class="nav-indicator"></span>
       </div>
+
+      <button class="theme-toggle" aria-label="Toggle theme">🌓</button>
     </div>
   </header>
 
   <!-- HERO -->
   <section class="hero">
     <div class="hero-glass hero-signature fade-up">
-      <img src="image/profile.png"
-           alt="Vimal Kumar profile photo"
-           class="profile-pic">
+      <img src="image/profile.png" alt="Vimal Kumar profile photo" class="profile-pic">
 
       <h1>Vimal Kumar</h1>
       <p>Learning Data Engineering · SQL · Python</p>
-     <div class="hero-chips">
-    <span>SQL</span>
-  <span>Python</span>
-  <span>Data</span>
-    </div>
+
+      <div class="hero-chips">
+        <span>SQL</span>
+        <span>Python</span>
+        <span>Data</span>
+      </div>
+
       <div class="hero-buttons">
         <a href="#projects" class="btn">View Projects</a>
         <a href="./Resume/Vimal_Resume.pdf"
-   class="btn outline"
-   target="_blank"
-   rel="noopener">
-  Download Resume
-</a>
-
+           class="btn outline"
+           target="_blank"
+           rel="noopener">
+          Download Resume
+        </a>
       </div>
     </div>
   </section>
@@ -56,107 +58,235 @@
   <section id="about" class="section fade-up">
     <h2>About Me</h2>
     <p class="about-text">
-      I am a BCA student and an aspiring Data Engineer.
-      I am building strong fundamentals in SQL, Python,
-      and data handling by working on real-world learning projects.
+      I am a BCA student and an aspiring Data Engineer. I am building strong
+      fundamentals in SQL, Python, and data handling by working on real-world
+      learning projects.
       <br><br>
       My goal is to grow step by step, understand how data systems work,
       and become a reliable data professional.
     </p>
   </section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="section fade-up">
-    <h2>Skills</h2>
+ <section id="skills" class="section fade-up">
+  <h2>Skills</h2>
 
-    <div class="skills-grid">
-      <div class="skill-glass">Python</div>
-      <div class="skill-glass">SQL</div>
-      <div class="skill-glass">Excel</div>
-      <div class="skill-glass">Pandas</div>
-      <div class="skill-glass">Data Cleaning</div>
-      <div class="skill-glass">Git</div>
-      <div class="skill-glass">Linux</div>
+  <div class="skills-advanced">
+
+    <div class="skill-group">
+      <h3>Core</h3>
+      <div class="skill-list">
+        <span>Python</span>
+        <span>SQL</span>
+        <span>Data Cleaning</span>
+      </div>
     </div>
 
-    <p class="learning-note">
-      Currently focusing on strengthening core Data Engineering fundamentals
-      through consistent practice and hands-on learning.
-    </p>
-  </section>
+    <div class="skill-group">
+      <h3>Tools</h3>
+      <div class="skill-list">
+        <span>Pandas</span>
+        <span>Excel</span>
+        <span>Git</span>
+        <span>Linux</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h3>Currently Learning</h3>
+      <div class="skill-list">
+        <span>ETL Basics</span>
+        <span>Data Modeling</span>
+        <span>Advanced SQL</span>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="learning-note">
+    I focus on building strong fundamentals first before moving to advanced tools.
+  </p>
+</section>
+
 
   <!-- JOURNEY -->
   <section id="journey" class="section fade-up">
-    <h2>Learning Journey</h2>
+  <h2>Learning Journey</h2>
 
-    <div class="timeline">
-      <div class="timeline-item">
-        <span>2024 – Present</span>
-        <h3>Data Engineering Fundamentals</h3>
-        <p>Learning SQL, Python, data cleaning, and basic ETL concepts.</p>
-      </div>
+  <div class="journey-advanced">
 
-      <div class="timeline-item">
-        <span>2023 – Present</span>
-        <h3>BCA Student</h3>
-        <p>Building programming fundamentals and exploring data tools.</p>
+    <div class="journey-step completed">
+      <span class="journey-time">2024</span>
+      <div class="journey-content">
+        <h3>Programming Foundations</h3>
+        <p>
+          Started BCA and built strong basics in programming logic,
+          problem solving, and computer fundamentals.
+        </p>
       </div>
     </div>
-  </section>
+
+    <div class="journey-step completed">
+      <span class="journey-time">Early 2025</span>
+      <div class="journey-content">
+        <h3>Data Fundamentals</h3>
+        <p>
+          Learned SQL basics, data cleaning concepts,
+          and how real-world datasets are structured.
+        </p>
+      </div>
+    </div>
+
+    <div class="journey-step active">
+      <span class="journey-time">Present</span>
+      <div class="journey-content">
+        <h3>Hands-on Data Practice</h3>
+        <p>
+          Working on SQL queries, Python data analysis,
+          and small ETL-style practice projects.
+        </p>
+      </div>
+    </div>
+
+    <div class="journey-step upcoming">
+      <span class="journey-time">Next</span>
+      <div class="journey-content">
+        <h3>Advanced Data Engineering</h3>
+        <p>
+          Planning to learn data modeling, pipelines,
+          and production-style workflows.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- PROJECTS -->
   <section id="projects" class="section fade-up">
-    <h2>Projects</h2>
+  <h2>Projects</h2>
 
-    <div class="projects-grid">
-      <div class="glass-card">
+  <div class="projects-advanced">
+
+    <div class="project-advanced">
+      <div class="project-header">
         <h3>SQL Data Cleaning</h3>
-        <p>Cleaned raw datasets by handling NULL values and duplicates.</p>
-        <span>SQL</span>
-        <a class="project-link"
-           href="https://github.com/Code-withFox?tab=repositories"
-           target="_blank">
-          View Code →
-        </a>
+        <span class="project-tag">SQL</span>
       </div>
 
-      <div class="glass-card">
-        <h3>Sales Data Analysis</h3>
-        <p>Analyzed monthly sales trends using Python and Excel.</p>
-        <span>Python · Excel</span>
-        <a class="project-link"
-           href="https://github.com/Code-withFox?tab=repositories"
-           target="_blank">
-          View Code →
-        </a>
-      </div>
+      <p class="project-desc">
+        Worked on raw datasets containing missing values, duplicates,
+        and inconsistent formats. Focused on writing clean,
+        readable SQL queries.
+      </p>
 
-      <div class="glass-card">
-        <h3>Basic ETL Pipeline</h3>
-        <p>Built a simple ETL workflow for CSV datasets.</p>
-        <span>Python · Pandas</span>
-        <a class="project-link"
-           href="https://github.com/Code-withFox?tab=repositories"
-           target="_blank">
+      <ul class="project-points">
+        <li>Removed duplicates using GROUP BY & window functions</li>
+        <li>Handled NULL values with conditional logic</li>
+        <li>Standardized date and text formats</li>
+      </ul>
+
+      <div class="project-footer">
+        <span class="tech">SQL</span>
+        <a href="https://github.com/Code-withFox?tab=repositories"
+           target="_blank"
+           class="project-link">
           View Code →
         </a>
       </div>
     </div>
-  </section>
+
+    <div class="project-advanced">
+      <div class="project-header">
+        <h3>Sales Data Analysis</h3>
+        <span class="project-tag">Python</span>
+      </div>
+
+      <p class="project-desc">
+        Analyzed sales data to understand monthly trends
+        and performance patterns using Python.
+      </p>
+
+      <ul class="project-points">
+        <li>Cleaned CSV data using Pandas</li>
+        <li>Generated monthly and category-wise summaries</li>
+        <li>Identified basic trends and insights</li>
+      </ul>
+
+      <div class="project-footer">
+        <span class="tech">Python · Pandas · Excel</span>
+        <a href="https://github.com/Code-withFox?tab=repositories"
+           target="_blank"
+           class="project-link">
+          View Code →
+        </a>
+      </div>
+    </div>
+
+    <div class="project-advanced">
+      <div class="project-header">
+        <h3>Basic ETL Practice</h3>
+        <span class="project-tag">ETL</span>
+      </div>
+
+      <p class="project-desc">
+        Built a small ETL-style workflow to understand how raw data
+        moves through cleaning and transformation stages.
+      </p>
+
+      <ul class="project-points">
+        <li>Loaded CSV data using Python</li>
+        <li>Applied cleaning and transformation logic</li>
+        <li>Exported structured output data</li>
+      </ul>
+
+      <div class="project-footer">
+        <span class="tech">Python · Pandas</span>
+        <a href="https://github.com/Code-withFox?tab=repositories"
+           target="_blank"
+           class="project-link">
+          View Code →
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- CONTACT -->
-  <section id="contact" class="section fade-up">
-    <h2>Contact</h2>
-    <p>
-      <a href="mailto:codewithfox.data@gmail.com">
-        codewithfox.data@gmail.com
-      </a>
-    </p>
-    <p>
-      <a href="https://github.com/Code-withFox" target="_blank">GitHub</a> ·
-      <a href="www.linkedin.com/in/codewithfox" target="_blank">LinkedIn</a>
-    </p>
-  </section>
+ <section id="contact" class="section fade-up">
+  <h2>Contact</h2>
+
+  <p class="contact-intro">
+    Open to internships, entry-level roles, and learning opportunities.
+    Feel free to reach out for collaboration or discussion.
+  </p>
+
+  <div class="contact-cards">
+
+    <a href="mailto:codewithfox.data@gmail.com" class="contact-card">
+      <span class="contact-label">Email</span>
+      <span class="contact-value">codewithfox.data@gmail.com</span>
+    </a>
+
+    <a href="https://www.linkedin.com/in/codewithfox"
+       target="_blank"
+       class="contact-card">
+      <span class="contact-label">LinkedIn</span>
+      <span class="contact-value">linkedin.com/in/codewithfox</span>
+    </a>
+
+    <a href="https://github.com/Code-withFox"
+       target="_blank"
+       class="contact-card">
+      <span class="contact-label">GitHub</span>
+      <span class="contact-value">github.com/Code-withFox</span>
+    </a>
+
+  </div>
+</section>
+
 
   <footer>
     © <span id="year"></span> Code With Fox
@@ -165,7 +295,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
