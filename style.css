@@ -1,3 +1,8 @@
+/* Force LIGHT theme even if phone is in dark mode */
+:root {
+  color-scheme: light;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -57,7 +62,7 @@ header {
   padding: 45px;
   text-align: center;
   border-radius: 28px;
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.65);
   backdrop-filter: blur(18px);
   border: 1px solid rgba(255, 255, 255, 0.8);
   box-shadow: 0 40px 80px rgba(0,0,0,0.1);
@@ -74,15 +79,7 @@ header {
   box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
-.hero h1 {
-  font-size: 34px;
-}
-
-.hero p {
-  margin: 10px 0 20px;
-  opacity: 0.8;
-}
-
+/* BUTTONS */
 .hero-buttons {
   display: flex;
   justify-content: center;
@@ -134,12 +131,6 @@ header {
   background: rgba(255, 255, 255, 0.55);
   backdrop-filter: blur(14px);
   border: 1px solid rgba(255, 255, 255, 0.9);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.skill-glass:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 35px rgba(0,0,0,0.12);
 }
 
 .learning-note {
@@ -162,15 +153,6 @@ header {
   border-left: 3px solid rgba(0,0,0,0.15);
 }
 
-.timeline-item span {
-  font-size: 13px;
-  opacity: 0.6;
-}
-
-.timeline-item h3 {
-  margin: 6px 0;
-}
-
 /* PROJECTS */
 .projects-grid {
   display: grid;
@@ -184,18 +166,6 @@ header {
   background: rgba(255,255,255,0.6);
   backdrop-filter: blur(14px);
   border: 1px solid rgba(255,255,255,0.9);
-  transition: transform 0.3s ease;
-}
-
-.glass-card:hover {
-  transform: translateY(-8px);
-}
-
-.glass-card span {
-  display: inline-block;
-  margin-top: 10px;
-  font-size: 13px;
-  opacity: 0.7;
 }
 
 .project-link {
@@ -203,11 +173,6 @@ header {
   margin-top: 12px;
   font-size: 14px;
   text-decoration: none;
-  opacity: 0.8;
-}
-
-.project-link:hover {
-  opacity: 1;
 }
 
 /* FOOTER */
