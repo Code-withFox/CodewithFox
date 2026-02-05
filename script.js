@@ -1,3 +1,4 @@
+// Scroll animation
 const items = document.querySelectorAll(".fade-up");
 
 const observer = new IntersectionObserver(entries => {
@@ -9,4 +10,6 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.2 });
 
 items.forEach(item => observer.observe(item));
+
+// Auto year
 document.getElementById("year").textContent = new Date().getFullYear();
