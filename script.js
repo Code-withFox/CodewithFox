@@ -56,38 +56,24 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* =====================
-     THEME SYSTEM
+     SYSTEM THEME (AUTO)
   ===================== */
   const root = document.documentElement;
-  const toggle = document.querySelector(".theme-toggle");
-  const savedTheme = localStorage.getItem("theme");
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
 
-  const setTheme = theme => {
-    root.setAttribute("data-theme", theme);
-    localStorage.setItem("theme", theme);
-    if (toggle) toggle.setAttribute("aria-pressed", theme === "dark");
+  const applyTheme = () => {
+    root.setAttribute(
+      "data-theme",
+      prefersDark.matches ? "dark" : "light"
+    );
   };
 
-  if (savedTheme === "dark" || savedTheme === "light") {
-    setTheme(savedTheme);
-  } else {
-    const prefersDark = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
-    setTheme(prefersDark ? "dark" : "light");
-  }
-
-  if (toggle) {
-    toggle.addEventListener("click", () => {
-      const current = root.getAttribute("data-theme");
-      setTheme(current === "dark" ? "light" : "dark");
-    });
-  }
+  applyTheme();
+  prefersDark.addEventListener("change", applyTheme);
 
   /* =====================
      ADVANCED NAVBAR
   ===================== */
-
   const navLinks = document.querySelectorAll(".nav-links a");
   const indicator = document.querySelector(".nav-indicator");
 
@@ -109,7 +95,6 @@ document.addEventListener("DOMContentLoaded", () => {
       `translateX(${rect.left - parentRect.left}px)`;
   }
 
-  // Scroll spy
   window.addEventListener(
     "scroll",
     () => {
@@ -133,12 +118,10 @@ document.addEventListener("DOMContentLoaded", () => {
     { passive: true }
   );
 
-  // Click sync
   navLinks.forEach(link => {
     link.addEventListener("click", () => setActiveLink(link));
   });
 
-  // Initial indicator
   if (navLinks[0]) setActiveLink(navLinks[0]);
 
   /* =====================
@@ -162,5 +145,35 @@ document.addEventListener("DOMContentLoaded", () => {
     { passive: true }
   );
 
-});
+  /* =====================
+     STUDY ROADMAP INTERACTION
+  ===================== */
+  /* =====================
+   DETAILED ROADMAP NAV
+ ===================== */
+ /* =====================
+   QUICK STUDY SEARCH
+===================== */
 
+const searchInput = document.getElementById("studySearch");
+const quickCards = document.querySelectorAll(".quick-card");
+
+if (searchInput) {
+  searchInput.addEventListener("input", () => {
+    const value = searchInput.value.toLowerCase();
+
+    quickCards.forEach(card => {
+      const keywords = card.dataset.keywords.toLowerCase();
+      const text = card.innerText.toLowerCase();
+
+      if (keywords.includes(value) || text.includes(value)) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
+}
+
+
+});
