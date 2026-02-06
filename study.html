@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Study Material | Code With Fox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="bg"></div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="nav">
+      <a href="index.html" class="logo">← Back</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="section fade-up">
+    <h1>Data Engineering Study Material</h1>
+    <p class="study-intro">
+      This page is for complete beginners. Follow the roadmap step by step.
+    </p>
+  </section>
+
+  <!-- QUICK STUDY ACCESS -->
+<section class="section fade-up">
+  <h2>Quick Study Access</h2>
+
+  <p class="study-intro">
+    Direct access to notes and study materials.
+    No roadmap required — just search or click.
+  </p>
+
+  <!-- SEARCH -->
+  <div class="study-search">
+    <input
+      type="text"
+      id="studySearch"
+      placeholder="Search notes (python, sql, java...)"
+    />
+  </div>
+
+  <!-- QUICK LINKS -->
+  <div class="quick-links">
+
+    <a href="#python" class="quick-card" data-keywords="python pandas data">
+      <h3>Python Notes</h3>
+      <p>Python basics, Pandas, data handling</p>
+    </a>
+
+    <a href="#sql" class="quick-card" data-keywords="sql database queries">
+      <h3>SQL Notes</h3>
+      <p>Queries, joins, aggregations</p>
+    </a>
+
+    <a href="#" class="quick-card" data-keywords="cpp c++ programming">
+      <h3>C++ Notes</h3>
+      <p>Basics of C++ programming</p>
+    </a>
+
+    <a href="#" class="quick-card" data-keywords="java programming">
+      <h3>Java Notes</h3>
+      <p>Java fundamentals and OOP</p>
+    </a>
+
+    <a href="#" class="quick-card" data-keywords="data engineering etl">
+      <h3>Data Engineering</h3>
+      <p>ETL, pipelines, concepts</p>
+    </a>
+
+  </div>
+</section>
+
+  <!-- BEGINNER FRIENDLY ROADMAP (PYTHON FIRST) -->
+<section class="section fade-up">
+  <h2>Beginner Friendly Data Engineer Roadmap</h2>
+
+  <p class="study-intro">
+    This roadmap is for absolute beginners.
+    We start with Python first, then SQL, and then move step by step.
+  </p>
+
+  <div class="roadmap-detailed">
+
+    <!-- LEVEL 0 -->
+    <div class="roadmap-block">
+      <h3>Level 0 · Foundations (Start Here)</h3>
+      <p class="roadmap-desc">
+        Start here if you don’t know anything about Data Engineering.
+      </p>
+
+      <ul>
+        <li>What is data?</li>
+        <li>How companies use data</li>
+        <li>Data Analyst vs Data Engineer vs Data Scientist</li>
+        <li>Basic idea of databases</li>
+      </ul>
+
+      <button class="roadmap-btn" data-target="foundations">
+        Start Foundations →
+      </button>
+    </div>
+
+    <!-- LEVEL 1 PYTHON -->
+    <section id="python" class="section fade-up">
+  <h2>Level 1 · Python for Data</h2>
+
+  <h3>What you should learn</h3>
+  <ul class="study-list">
+    <li>Variables, loops, functions</li>
+    <li>Working with CSV & Excel files</li>
+    <li>Pandas basics (DataFrame)</li>
+    <li>Data cleaning logic</li>
+  </ul>
+
+  <h3>Recommended Resources</h3>
+  <ul class="study-list">
+    <li>
+      <a href="https://www.youtube.com/watch?v=rfscVS0vtbw" target="_blank">
+        Python Full Course – FreeCodeCamp (YouTube)
+      </a>
+    </li>
+    <li>
+      <a href="https://pandas.pydata.org/docs/" target="_blank">
+        Pandas Official Documentation
+      </a>
+    </li>
+  </ul>
+
+  <h3>Practice & Notes</h3>
+  <ul class="study-list">
+    <li>
+      <a href="https://github.com/Code-withFox" target="_blank">
+        My Python Practice (GitHub)
+      </a>
+    </li>
+    <li>My personal notes (PDF – coming soon)</li>
+  </ul>
+</section>
+
+    <!-- LEVEL 1 SQL -->
+    <section id="sql" class="section fade-up">
+  <h2>Level 1 · SQL</h2>
+
+  <h3>What you should learn</h3>
+  <ul class="study-list">
+    <li>SELECT, WHERE, ORDER BY</li>
+    <li>GROUP BY & aggregate functions</li>
+    <li>Joins</li>
+    <li>Subqueries & CTEs</li>
+  </ul>
+
+  <h3>Recommended Resources</h3>
+  <ul class="study-list">
+    <li>
+      <a href="https://www.youtube.com/watch?v=HXV3zeQKqGY" target="_blank">
+        SQL Tutorial – FreeCodeCamp
+      </a>
+    </li>
+    <li>
+      <a href="https://www.w3schools.com/sql/" target="_blank">
+        SQL Basics – W3Schools
+      </a>
+    </li>
+  </ul>
+
+  <h3>Practice & Notes</h3>
+  <ul class="study-list">
+    <li>Practice queries on sample datasets</li>
+    <li>
+      <a href="https://github.com/Code-withFox" target="_blank">
+        My SQL Practice (GitHub)
+      </a>
+    </li>
+  </ul>
+</section>
+
+
+    <!-- LEVEL 2 -->
+    <div class="roadmap-block">
+      <h3>Level 2 · Data Engineering Basics</h3>
+      <p class="roadmap-desc">
+        Learn how data flows in real-world systems.
+      </p>
+
+      <ul>
+        <li>What is Data Engineering?</li>
+        <li>ETL vs ELT</li>
+        <li>What is a data pipeline?</li>
+        <li>Batch vs streaming data</li>
+      </ul>
+
+      <button class="roadmap-btn" data-target="de">
+        Learn Data Engineering →
+      </button>
+    </div>
+
+    <!-- LEVEL 3 -->
+    <div class="roadmap-block">
+      <h3>Level 3 · Tools & Workflow</h3>
+      <p class="roadmap-desc">
+        Tools that Data Engineers use daily.
+      </p>
+
+      <ul>
+        <li>Git & GitHub basics</li>
+        <li>Linux commands</li>
+        <li>Data formats (CSV, JSON)</li>
+      </ul>
+
+      <button class="roadmap-btn" data-target="tools">
+        Learn Tools →
+      </button>
+    </div>
+
+    <!-- LEVEL 4 -->
+    <div class="roadmap-block">
+      <h3>Level 4 · Advanced & Industry Ready</h3>
+      <p class="roadmap-desc">
+        Do this only after completing all previous levels.
+      </p>
+
+      <ul>
+        <li>Data modeling concepts</li>
+        <li>Advanced SQL optimization</li>
+        <li>End-to-end data engineering projects</li>
+      </ul>
+
+      <button class="roadmap-btn" data-target="advanced">
+        Advanced Topics →
+      </button>
+    </div>
+
+  </div>
+</section>
+
+
+  <footer>
+    © <span id="year"></span> Code With Fox
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
