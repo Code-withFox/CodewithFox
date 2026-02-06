@@ -1,32 +1,8 @@
 /* =====================
-   THEME VARIABLES
+   DARK THEME VARIABLES (ONLY)
 ===================== */
-
-/* LIGHT MODE */
 :root {
-  --bg-main: #f7f7f7;
-  --bg-blend: linear-gradient(
-    135deg,
-    #ffffff 0%,
-    #f1f1f1 45%,
-    #e6e6e6 100%
-  );
-
-  --text-main: #111;
-  --glass-bg: rgba(255, 255, 255, 0.65);
-  --glass-border: rgba(0, 0, 0, 0.08);
-}
-
-/* DARK MODE */
-[data-theme="dark"] {
   --bg-main: #0b0b0b;
-  --bg-blend: linear-gradient(
-    135deg,
-    #0b0b0b 0%,
-    #141414 45%,
-    #1f1f1f 100%
-  );
-
   --text-main: #f5f5f5;
   --glass-bg: rgba(255, 255, 255, 0.08);
   --glass-border: rgba(255, 255, 255, 0.15);
@@ -50,15 +26,24 @@ body {
   background: var(--bg-main);
   color: var(--text-main);
   line-height: 1.7;
-  transition: background 0.4s ease, color 0.4s ease;
 }
 
-/* BACKGROUND */
+/* =====================
+   BACKGROUND (IMAGE)
+===================== */
 .bg {
   position: fixed;
   inset: 0;
-  background: var(--bg-blend);
   z-index: -1;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.75)
+    ),
+    url("Image/cssback.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* =====================
@@ -86,7 +71,7 @@ a:hover {
 .site-header.scrolled {
   background: var(--glass-bg);
   backdrop-filter: blur(10px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
 }
 
 .site-header.hide {
@@ -124,7 +109,6 @@ a:hover {
   font-weight: 600;
 }
 
-/* NAV INDICATOR */
 .nav-indicator {
   position: absolute;
   bottom: -6px;
@@ -174,11 +158,6 @@ a:hover {
 .btn {
   padding: 10px 22px;
   border-radius: 20px;
-  background: #111;
-  color: #fff;
-}
-
-[data-theme="dark"] .btn {
   background: #fff;
   color: #000;
 }
@@ -186,15 +165,11 @@ a:hover {
 .btn.outline {
   background: transparent;
   border: 1px solid currentColor;
+  color: inherit;
 }
 
 .btn:active {
   transform: scale(0.96);
-}
-
-.btn:focus-visible {
-  outline: 2px solid currentColor;
-  outline-offset: 3px;
 }
 
 /* =====================
@@ -267,7 +242,7 @@ a:hover {
 
 .project-advanced:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
 }
 
 /* =====================
@@ -312,7 +287,6 @@ footer {
 /* =====================
    STUDY PAGE
 ===================== */
-
 .study-intro {
   max-width: 600px;
   font-size: 14.5px;
@@ -331,7 +305,9 @@ footer {
   opacity: 0.9;
 }
 
-/* ROADMAP */
+/* =====================
+   ROADMAP
+===================== */
 .roadmap {
   max-width: 800px;
   display: flex;
@@ -354,13 +330,51 @@ footer {
 }
 
 /* =====================
+   QUICK STUDY ACCESS
+===================== */
+.study-search {
+  max-width: 400px;
+  margin-bottom: 26px;
+}
+
+.study-search input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  color: inherit;
+}
+
+.quick-links {
+  max-width: 900px;
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.quick-card {
+  padding: 22px;
+  border-radius: 22px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(12px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.quick-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* =====================
    MOBILE
 ===================== */
-@media (max-width: 768px) {
-
-  .nav {
-    padding: 14px 18px;
+@media (prefers-reduced-motion: reduce) {
+  .bg {
+    animation: none;
   }
+}
 
   .hero {
     padding: 120px 16px 80px;
@@ -382,107 +396,93 @@ footer {
   .journey-step {
     grid-template-columns: 1fr;
   }
-}
+
 /* =====================
-   DETAILED ROADMAP
+   BACKGROUND SLOW ANIMATION
 ===================== */
 
-.roadmap-detailed {
-  max-width: 900px;
-  display: flex;
-  flex-direction: column;
-  gap: 26px;
+.bg {
+  animation: bgZoom 40s ease-in-out infinite;
+  will-change: transform;
 }
 
-.roadmap-block {
-  padding: 26px;
-  border-radius: 22px;
+@keyframes bgZoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* =====================
+   CONTACT – IMPROVED
+===================== */
+
+.contact-intro {
+  max-width: 620px;
+  font-size: 14.5px;
+  opacity: 0.85;
+  margin-bottom: 34px;
+}
+
+.contact-cards {
+  max-width: 720px;
+  display: grid;
+  gap: 18px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px 24px;
+  border-radius: 20px;
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
   backdrop-filter: blur(14px);
-}
-
-.roadmap-block h3 {
-  font-size: 17px;
-  margin-bottom: 6px;
-}
-
-.roadmap-desc {
-  font-size: 14px;
-  opacity: 0.85;
-  margin-bottom: 12px;
-}
-
-.roadmap-block ul {
-  padding-left: 18px;
-  margin-bottom: 14px;
-}
-
-.roadmap-block li {
-  font-size: 14px;
-  margin-bottom: 6px;
-  opacity: 0.9;
-}
-
-.roadmap-btn {
-  padding: 8px 16px;
-  font-size: 13.5px;
-  border-radius: 999px;
-  background: transparent;
-  border: 1px solid currentColor;
-  cursor: pointer;
-}
-
-.roadmap-btn:hover {
-  opacity: 0.85;
-}
-/* =====================
-   QUICK STUDY ACCESS
-===================== */
-
-.study-search {
-  max-width: 400px;
-  margin-bottom: 26px;
-}
-
-.study-search input {
-  width: 100%;
-  padding: 12px 16px;
-  border-radius: 999px;
-  border: 1px solid var(--glass-border);
-  background: var(--glass-bg);
-  color: inherit;
-  font-size: 14px;
-  outline: none;
-}
-
-.quick-links {
-  max-width: 900px;
-  display: grid;
-  gap: 22px;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-}
-
-.quick-card {
-  padding: 22px;
-  border-radius: 22px;
-  background: var(--glass-bg);
-  border: 1px solid var(--glass-border);
-  backdrop-filter: blur(12px);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.quick-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 36px rgba(0,0,0,0.6);
 }
 
-.quick-card h3 {
-  font-size: 16px;
-  margin-bottom: 6px;
+.contact-icon {
+  font-size: 20px;
+  opacity: 0.9;
 }
 
-.quick-card p {
-  font-size: 13.5px;
-  opacity: 0.85;
+.contact-label {
+  display: block;
+  font-size: 12px;
+  opacity: 0.6;
+  margin-bottom: 2px;
+}
+
+.contact-value {
+  font-size: 14.5px;
+  font-weight: 500;
+}
+
+.contact-note {
+  margin-top: 24px;
+  font-size: 13px;
+  opacity: 0.6;
+}
+/* =====================
+   CONTACT CTA
+===================== */
+
+.contact-cta {
+  margin-top: 30px;
+}
+
+.contact-cta .btn {
+  padding: 12px 26px;
+  font-size: 14.5px;
 }
