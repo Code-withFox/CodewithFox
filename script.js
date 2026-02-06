@@ -55,22 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     yearEl.textContent = new Date().getFullYear();
   }
 
-  /* =====================
-     SYSTEM THEME (AUTO)
-  ===================== */
-  const root = document.documentElement;
-  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
-
-  const applyTheme = () => {
-    root.setAttribute(
-      "data-theme",
-      prefersDark.matches ? "dark" : "light"
-    );
-  };
-
-  applyTheme();
-  prefersDark.addEventListener("change", applyTheme);
-
+  
   /* =====================
      ADVANCED NAVBAR
   ===================== */
