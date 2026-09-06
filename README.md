@@ -1,178 +1,223 @@
-# Code With Fox — Data Engineering Portfolio
+<div align="center">
 
-> Personal portfolio and learning hub of Vimal Kumar, an aspiring Data Engineer.
+# 🦊 CODE WITH FOX
 
----
+### Data Engineering • Python • SQL • Building in Public
 
-## 🚀 About
+**A personal portfolio, learning hub, and engineering journey.**
 
-This repository contains my personal portfolio website and learning hub, built to document my journey toward becoming a Data Engineer.
+[🌐 Portfolio](#-portfolio) · [🗺️ Roadmap](#-roadmap) · [📂 Projects](#-projects) · [📬 Contact](#-connect)
 
-The portfolio focuses on building strong fundamentals first and gradually moving toward production-level data engineering.
-
-### Core Focus
-
-- Python
-- SQL
-- Databases
-- ETL / ELT
-- Data Pipelines
-- Data Modeling
-- Cloud & Data Warehousing
-- Practical Engineering Projects
+</div>
 
 ---
 
-## 🎯 Career Direction
-
-My approach is simple:
+<div align="center">
 
 ```text
-Programming Fundamentals
-          ↓
-        Python
-          ↓
-    SQL + Databases
-          ↓
-      Linux + Git
-          ↓
-       ETL / ELT
-          ↓
-     Data Modeling
-          ↓
-      Orchestration
-          ↓
- Cloud + Data Warehouses
-          ↓
-Production Data Engineering
+┌──────────────────────────────────────────────────────────────┐
+│                    CODE WITH FOX                            │
+│                                                              │
+│   LEARN  →  BUILD  →  BREAK  →  UNDERSTAND  →  IMPROVE    │
+│                                                              │
+│                  ASPIRING DATA ENGINEER                     │
+└──────────────────────────────────────────────────────────────┘
 ```
 
-I believe strong fundamentals are more valuable than simply collecting tools.
+</div>
+
+## 👋 Hello, I'm Vimal
+
+I'm a **BCA student** working toward a career in **Data Engineering**.
+
+This repository is more than a portfolio website. It's a place where I document what I'm learning, build practical projects, and gradually move from programming fundamentals toward production-oriented data systems.
+
+> **My rule:** Don't just learn the tool. Understand the system.
 
 ---
 
-## 🛠️ Tech Stack
+## ⚡ What I'm Building Toward
 
-| Technology | Purpose |
+```text
+                    DATA ENGINEERING
+                           │
+          ┌────────────────┼────────────────┐
+          ↓                ↓                ↓
+       PROGRAMMING      DATABASES         SYSTEMS
+          │                │                │
+       Python             SQL          Linux + Git
+          │                │                │
+          └────────────────┼────────────────┘
+                           ↓
+                      ETL / ELT
+                           ↓
+                    DATA MODELING
+                           ↓
+                    ORCHESTRATION
+                           ↓
+                    CLOUD / SPARK
+                           ↓
+                PRODUCTION PIPELINES
+```
+
+---
+
+## 🧰 My Current Stack
+
+| Area | Technologies |
 |---|---|
-| HTML | Portfolio structure |
-| CSS | UI, layout & responsive design |
-| JavaScript | Interactions & functionality |
-| Python | Programming, automation & data engineering |
-| SQL | Querying, transformation & analysis |
-| Pandas | Data manipulation & cleaning |
-| Git & GitHub | Version control & collaboration |
+| **Programming** | Python |
+| **Data** | SQL · Pandas |
+| **Databases** | PostgreSQL |
+| **Engineering** | ETL / ELT · Data Pipelines |
+| **Developer Tools** | Git · GitHub · Linux |
+| **Next Level** | Airflow · Spark · Cloud · Warehouses |
+| **Web** | HTML · CSS · JavaScript |
 
 ---
 
-## 📂 Repository Structure
+## 🧠 Currently Learning
+
+### `01` Python
+> Programming logic → functions → files → exceptions → data handling → Pandas
+
+### `02` SQL
+> Queries → joins → aggregation → CTEs → window functions → optimization
+
+### `03` Data Engineering
+> ETL → ELT → pipelines → data quality → modeling → orchestration
+
+### `04` Engineering Workflow
+> Git → Linux → APIs → CSV → JSON → Parquet → automation
+
+---
+
+## 🗺️ Roadmap
+
+### FOUNDATION
+
+- [x] Computer & programming fundamentals
+- [ ] Python fundamentals
+- [ ] Advanced Python
+- [ ] Data structures & algorithms
+
+### DATA
+
+- [ ] SQL
+- [ ] PostgreSQL
+- [ ] Advanced SQL
+- [ ] Data modeling
+- [ ] Data quality
+
+### ENGINEERING
+
+- [ ] ETL / ELT
+- [ ] APIs & data ingestion
+- [ ] Linux
+- [ ] Git & GitHub
+- [ ] Workflow orchestration
+- [ ] Apache Airflow
+
+### BIG DATA & CLOUD
+
+- [ ] Apache Spark
+- [ ] Distributed processing
+- [ ] Cloud fundamentals
+- [ ] Data lakes
+- [ ] Data warehouses
+- [ ] Cloud data pipelines
+
+### PRODUCTION
+
+- [ ] Testing
+- [ ] Monitoring & observability
+- [ ] CI/CD
+- [ ] Performance optimization
+- [ ] Cost optimization
+- [ ] End-to-end production projects
+
+> 🟢 **The roadmap changes as I learn.**
+
+---
+
+## 📂 Projects
+
+I'm building projects progressively instead of waiting until I know everything.
+
+### Project philosophy
 
 ```text
-CodewithFox/
-├── index.html
-├── study.html
-├── style.css
-├── script.js
-├── Image/
-├── Resume/
-└── CNAME
+          REAL PROBLEM
+               ↓
+            RAW DATA
+               ↓
+            EXTRACT
+               ↓
+           TRANSFORM
+               ↓
+            VALIDATE
+               ↓
+              LOAD
+               ↓
+            ANALYZE
+               ↓
+          DOCUMENTATION
 ```
+
+### Planned project progression
+
+| Level | Project Type | Main Skills |
+|---|---|---|
+| 🟢 Beginner | Data Cleaning | Python · Pandas |
+| 🟢 Beginner | SQL Analysis | SQL · PostgreSQL |
+| 🟡 Intermediate | ETL Pipeline | Python · SQL |
+| 🟡 Intermediate | API → Database | APIs · Python · PostgreSQL |
+| 🟠 Advanced | Scheduled Pipeline | Airflow · Python |
+| 🔴 Advanced | Big Data Pipeline | Spark · Cloud |
+| 🔴 Advanced | End-to-End Platform | Cloud · Warehouse · Orchestration |
+
+Project repositories will be linked here as they are completed.
 
 ---
 
 ## 🌐 Portfolio
 
-### Live Website
+My portfolio website contains:
 
-> Add your GitHub Pages URL here.
+- 👨‍💻 About me
+- 🧰 Technology stack
+- 🧠 Current learning
+- 🔄 Data engineering pipeline
+- 📊 Projects
+- 🗺️ Study roadmap
+- 🎓 Education
+- 📬 Contact information
 
-### Study Hub
-
-The repository includes a dedicated **Study Hub** containing my Data Engineering learning roadmap.
-
-It covers:
-
-- Python
-- SQL
-- Databases
-- ETL / ELT
-- Data Pipelines
-- Linux
-- Git
-- Data Modeling
-- Cloud
-- Data Warehouses
-- Advanced Data Engineering
+**Live Portfolio:** `Add your GitHub Pages URL`
 
 ---
 
-## 📊 Data Engineering Projects
+## 📚 Study Hub
 
-Projects are added progressively as I move through the roadmap.
+The repository includes a dedicated learning page for my Data Engineering roadmap.
 
-My preferred project workflow:
+### Study flow
 
 ```text
-Problem
+CONCEPT
    ↓
-Raw Data
+NOTES
    ↓
-Extract
+PRACTICE
    ↓
-Transform
+SMALL PROJECT
    ↓
-Validate
+REAL PROJECT
    ↓
-Load
-   ↓
-Analyze
+DOCUMENT
 ```
 
-The goal is to build projects that demonstrate not only coding ability, but also data quality, reliability and engineering thinking.
-
----
-
-## 🧠 Current Learning
-
-### In Progress
-
-- Python fundamentals
-- SQL
-- Data structures & problem solving
-- Pandas
-- Data cleaning
-- ETL fundamentals
-
-### Next
-
-- PostgreSQL
-- Linux
-- Git & GitHub
-- Advanced SQL
-- Data Modeling
-- Airflow
-
----
-
-## 🗺️ Data Engineering Roadmap
-
-- [x] Programming fundamentals
-- [ ] Python
-- [ ] Advanced Python
-- [ ] SQL
-- [ ] PostgreSQL
-- [ ] Linux
-- [ ] Git & GitHub
-- [ ] ETL / ELT
-- [ ] Data Modeling
-- [ ] Airflow
-- [ ] Apache Spark
-- [ ] Cloud
-- [ ] Data Warehouses
-- [ ] Production Data Pipelines
-- [ ] End-to-End Data Engineering Projects
-
-> This roadmap is a living document and will be updated as I progress.
+The goal is to turn every major topic into something practical.
 
 ---
 
@@ -181,44 +226,85 @@ The goal is to build projects that demonstrate not only coding ability, but also
 **Bachelor of Computer Applications (BCA)**  
 Amity University Online
 
-**Focus:** Data Engineering
+**Career Focus:** Data Engineering
 
 ---
 
-## 📈 Learning Philosophy
+## 📌 Repository Structure
 
 ```text
-Learn
-  ↓
-Practice
-  ↓
-Build
-  ↓
-Break
-  ↓
-Understand
-  ↓
-Improve
-  ↓
-Document
+CodewithFox/
+│
+├── index.html          # Main portfolio
+├── study.html          # Data Engineering Study Hub
+├── style.css           # Portfolio styling
+├── script.js            # Interactions
+│
+├── Image/              # Website assets
+├── Resume/             # Resume
+│
+├── CNAME               # GitHub Pages configuration
+└── README.md           # You are here
 ```
-
-I prefer learning by building practical projects and understanding why systems work rather than only following tutorials.
 
 ---
 
-## 📬 Contact
+## 🧭 Learning Philosophy
+
+<table>
+<tr>
+<td align="center">📖<br><b>LEARN</b></td>
+<td>→</td>
+<td align="center">⌨️<br><b>PRACTICE</b></td>
+<td>→</td>
+<td align="center">🏗️<br><b>BUILD</b></td>
+<td>→</td>
+<td align="center">💥<br><b>BREAK</b></td>
+<td>→</td>
+<td align="center">🧠<br><b>UNDERSTAND</b></td>
+<td>→</td>
+<td align="center">🚀<br><b>IMPROVE</b></td>
+</tr>
+</table>
+
+I don't want to simply collect technologies.
+
+I want to understand **why systems work, where they fail, and how to build them better.**
+
+---
+
+## 📈 Progress
+
+```text
+Programming       █████████░░░░░░░░░░  Foundation
+Python            ████████░░░░░░░░░░░░  Learning
+SQL               ███████░░░░░░░░░░░░░  Learning
+Data Engineering  ████░░░░░░░░░░░░░░░░  Starting
+Cloud             ██░░░░░░░░░░░░░░░░░░  Upcoming
+```
+
+> Progress bars represent my current learning focus, not professional proficiency.
+
+---
+
+## 🔗 Connect
 
 **Vimal Kumar**
 
-- GitHub: `@Code-withFox`
-- LinkedIn: `Add your LinkedIn profile`
-- Email: `Add your professional email`
+- 🐙 GitHub: [@Code-withFox](https://github.com/Code-withFox)
+- 💼 LinkedIn: `Add your LinkedIn`
+- 📧 Email: `Add your professional email`
 
 ---
 
-## ⭐ Code With Fox
+<div align="center">
+
+### 🦊 CODE WITH FOX
 
 **Learn. Build. Engineer.**
 
-This repository represents my ongoing journey from programming fundamentals to professional Data Engineering.
+*From fundamentals to production.*
+
+⭐ Feel free to explore the repository and follow the journey.
+
+</div>
