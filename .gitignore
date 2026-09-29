@@ -1,0 +1,7 @@
+# Never commit real secrets. Copy .env.example to .env for local values.
+.env
+.env.local
+.env.*.local
+node_modules
+dist
+*.local

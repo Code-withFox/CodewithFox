@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply antialiased;
+  }
+  /* Selection */
+  ::selection {
+    background: rgba(249, 115, 22, 0.35);
+  }
+  /* Focus visibility */
+  :focus-visible {
+    outline: 2px solid rgba(249, 115, 22, 0.6);
+    outline-offset: 2px;
+  }
+  /* Scrollbar */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(120, 120, 130, 0.4) transparent;
+  }
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background: rgba(120, 120, 130, 0.4);
+    border-radius: 8px;
+  }
+}
+
+@layer components {
+  .markdown {
+    @apply text-[15px] leading-relaxed text-ink-700 dark:text-ink-300;
+  }
+  .markdown h1 {
+    @apply mt-2 mb-4 text-2xl font-semibold text-ink-900 dark:text-ink-50;
+  }
+  .markdown h2 {
+    @apply mt-8 mb-3 text-xl font-semibold text-ink-900 dark:text-ink-50;
+  }
+  .markdown h3 {
+    @apply mt-6 mb-2 text-lg font-semibold text-ink-800 dark:text-ink-100;
+  }
+  .markdown p {
+    @apply my-3;
+  }
+  .markdown ul {
+    @apply my-3 list-disc space-y-1 pl-6;
+  }
+  .markdown ol {
+    @apply my-3 list-decimal space-y-1 pl-6;
+  }
+  .markdown li {
+    @apply pl-1;
+  }
+  .markdown hr {
+    @apply my-6 border-ink-200 dark:border-ink-800;
+  }
+  .markdown h1:first-child,
+  .markdown h2:first-child {
+    @apply mt-0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
